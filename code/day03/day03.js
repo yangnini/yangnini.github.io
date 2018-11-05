@@ -25,3 +25,8 @@ if(!localStorage.getItem('name')){
 myButton.onclick=function(){
     setUserName();
 }
+document.querySelector('#clearButton').onclick=function(){
+    // alert('假装我在清除数据');
+    console.log('我在偷偷清除数据')
+    localStorage.clear();
+}
