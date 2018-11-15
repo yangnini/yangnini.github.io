@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>美丽的风景</title>
+    </head>
+    <body>
+        <picture>
+            <source media="(max-width: 899px)" srcset="../images/宽屏风景640px.jpg">
+            <source media="(min-width: 900px)" srcset="../images/宽屏风景900px.jpg">
+            <img src="../images/宽屏风景1440px.jpg" alt="美丽的风景">
+        </picture>
+        <img srcset="../images/宽屏风景640px.jpg 640w,
+                     ../images/宽屏风景900px.jpg 900w,
+                     ../images/宽屏风景1440px.jpg 1440w"
+             sizes="(max-width: 640px) 600px,
+                    (max-width: 900px) 860px,
+                    1440px"
+             src="../images/宽屏风景1440px.jpg" alt="美丽的风景">
+    </body>
+</html>
