@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>原生表单部件练习——可选中项，按钮，高级表单部件</title>
+    </head>
+    <body>
+        <h1>原生表单部件练习——可选中项，按钮，高级表单部件</h1>
+        <form>
+            <fieldset>
+                <legend>Choose all the vegetables you like to eat</legend>
+                <ul>
+                    <li>
+                        <label for="carrots">carrots</label>
+                        <input type="checkbox" check id="carrots" name="carrots" value="carrots">
+                    </li>
+                    <li>
+                        <label for="peas">Peas</label>
+                        <input type="checkbox" check id="peas" name="peas" value="peas">
+                    </li>
+                    <li>
+                        <label for="cabbage">cabbage</label>
+                        <input type="checkbox" check id="cabbage" name="cabbage" value="cabbage">
+                    </li>
+                    <li>
+                        <label for="cauliflower">Cauliflower</label>
+                        <input type="checkbox" check id="cauliflower" name="cauliflower" value="cauliflower">
+                    </li>
+                    <li>
+                        <label for="Broccoli">Broccoli</label>
+                        <input type="checkbox" check id="Broccoli" name="Broccoli" value="Broccoli">
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>What is your favorite meal?</legend>
+                <ul>
+                    <li>
+                        <label for="soup">Soup</label>
+                        <input type="radio" check id="soup" name="meal" value="soup">
+                    </li>
+                    <li>
+                        <label for="curry">Curry</label>
+                        <input type="radio" id="curry" name="meal" value="curry">
+                    </li>
+                    <li>
+                        <label for="pizza">Pizza</label>
+                        <input type="radio" id="pizza" name="meal" value="pizza">
+                    </li>
+                    <li>
+                        <label for="tacos">Tacos</label>
+                        <input type="radio" id="tacos" name="meal" value="tacos">
+                    </li>
+                    <li>
+                        <label for="bolognaise">Bolognaise</label>
+                        <input type="radio" id="bolognaise" name="meal" value="bolognaise">
+                    </li>
+                </ul>
+            </fieldset>
+
+            <button type="submit">
+                This is a<br><strong>submit button</strong>
+            </button>
+
+            <input type="submit" value="This is a submit button">
+
+            <button type="reset">
+                This is a<br><strong>reset button</strong>
+            </button>
+
+            <input type="reset" value="This is a reset button">
+
+            <button type="button">
+                This is an<br><strong>anonymous button</strong>
+            </button>
+
+            <input type="button" value="This is an anonymous button">
+
+            <p>
+                <label for="age">What is your age?</label>
+                <input type="number" id="age" name="age" min="1" max="10" step="2">
+            </p>
+            <p>
+                <label for="beans">How many beans can you eat?</label>
+                <input type="range" id="beans" name="beans" min="0" max="500" step="10">
+                <span class="beancount"></span>
+            </p>
+            <p>
+                <label for="myDate">When are you available this summer?</label>
+                <input type="date" id="myDate" name="myDate" min="2018-06-01" max="2018-08-31">
+            </p>
+            <p>
+                <label for="meet">When shall we have the meeting?</label>
+                <input type="datetime-local" id="meet" name="meet">
+            </p>
+            <p>
+                <label for="month">What month is your favorite?</label>
+                <input type="month" id="month" name="month">
+            </p>
+            <p>
+                <label for="week">What week is your favorite?</label>
+                <input type="week" id="week" name="week">
+            </p>
+            <p>
+                <label for="time">Set the time for your wifi fridge</label>
+                <input type="time" id="time" name="time">
+            </p>
+            <p>
+                <label for="color">What is your favourite color? </label>
+                <input type="color" id="color" name="color">
+            </p>
+        </form>
+        <script>
+            var beans = document.querySelector('#beans');
+            var count = document.querySelector('.beancount');
+            
+            count.textContent = beans.value;
+
+            beans.oninput = function() {
+                count.textContent = beans.value;
+            }
+        </script>
+    </body>
+</html>
