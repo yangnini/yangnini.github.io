@@ -2,10 +2,10 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>原生表单部件练习——可选中项，按钮，高级表单部件</title>
+        <title>原生表单部件练习——可选中项，按钮，高级表单部件，其他小部件</title>
     </head>
     <body>
-        <h1>原生表单部件练习——可选中项，按钮，高级表单部件</h1>
+        <h1>原生表单部件练习——可选中项，按钮，高级表单部件，其他小部件</h1>
         <form>
             <fieldset>
                 <legend>Choose all the vegetables you like to eat</legend>
@@ -108,6 +108,28 @@
             <p>
                 <label for="color">What is your favourite color? </label>
                 <input type="color" id="color" name="color">
+            </p>
+            <p>
+                <label for="file">Choose an image to upload</label>
+                <input type="file" id="file" name="file" accept="image/*" multiple>
+            </p>
+            <div>
+                <input type="hidden" id="timestamp" name="timestamp" value="12375835">
+            </div>
+            <p>
+                <input type="image" alt="Click me" src="../images/蓝天白云绿草地.jpg">
+            </p>
+            <p>
+                <progress max="100" value="75">75/100</progress>
+            </p>
+            <p>
+                <progress max="100" value="30">30/100</progress>
+            </p>
+            <p>
+                <meter min="0" max="100" value="75" low="33" high="66" optimum="50">75</meter>
+            </p>
+            <p>
+                <meter min="0" low="33" high="66" max="100" value="25" optimum="50">25</meter>
             </p>
         </form>
         <script>
